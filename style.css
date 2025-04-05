@@ -44,12 +44,14 @@ display: none;}
 justify-content: center;
 align-items: center;
 margin-top: 40px;
-background-color: aliceblue;
-padding-top:40px;
-padding-bottom: 40px;
+background-color:aliceblue;
+padding-top:60px;
+padding-bottom: 35px;
 padding-right: 40px;
 padding-left: 40px;
-gap:160px;}
+gap:160px;
+margin-bottom: 0;
+}
 
 .home-img img {width: 300px;
 border-radius: 150px;
@@ -85,15 +87,18 @@ font-weight: 900;
 .social-media a {display: inline-flex;
 justify-content: center;
 align-items: center;
-width: 42px;
-height: 42px;
+width: 82px;
+height: 82px;
 background: transparent;
-border:2px solid seagreen;
+border:2px solid aliceblue;
 border-radius: 50%;
-font-size: 24px;
-margin:42px 24px 42px 0;
+font-size: 48px;
+margin-bottom: 40px;
+margin-top:60px;
+margin-right: 40px;
 transition: 0.3s ease;
-text-decoration: none;}
+text-decoration: none;
+border:2px solid seagreen;}
 
 .social-media a:hover {transform: scale(1.5) translateY(-10px);
 box-shadow: 0 0 25px seagreen;
@@ -150,7 +155,7 @@ line-height: 1.2;}
 .about-content p {font-size: 22px;
 margin-top:32px;
 margin-bottom: 50px;
-max-width: 800px;}
+}
 
 /* ------services section------- */
 .services {background-color: aliceblue;
@@ -355,19 +360,7 @@ font-weight: 500;}
 .home-content {position: relative;
 top:-150px;}
 
-.home .social-media a {display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border:1px solid seagreen;
-    border-radius: 50%;
-    font-size: 16px;
-    margin:31px 16px 31px 0;
-    transition: 0.3s ease;
-    text-decoration: none;
-}
+
     .home .social-media a:hover {background-color: springgreen;}
 
     .home-content p {border:2px solid black;
@@ -390,15 +383,36 @@ padding-bottom: 10px;}
     border-radius: 50%;
     
     }} */
+     @media(max-width:550px){.home .social-media a {display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border:1px solid seagreen;
+        border-radius: 50%;
+        font-size: 16px;
+        margin:31px 16px 31px 0;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }}
 
-    @media(max-width:400px){.btn {padding:10px 30px;
-        background-color: springgreen;
+    @media(max-width:986px){.btn.btn-2 {margin-bottom: -50px;
+        
+       
+        }}
+
+    @media(max-width:400px){.btn.btn-2 {padding:10px 30px;
+        background-color:seagreen;
          border-radius: 64px;
         box-shadow: none;
         font-size: 18px;
         font-weight: 500;
-        margin-left: 18px;
-        margin-top:-5px;
+        
+        position: relative;
+        left:25px;
+        top:-10px;
+        
         }}
 /* ------about section responsiveness code */
         @media(max-width:940px){.about {display: flex;
@@ -414,7 +428,7 @@ padding-bottom: 10px;}
             background-color:aquamarine;
         border-radius: 10px;
         padding:20px;
-    width: 100%;
+    
 font-size: 16px;}
     }
 
@@ -422,3 +436,58 @@ font-size: 16px;}
         border-radius: 50%;
         
     }}
+
+
+    /* ----Testimonial section responsive code------- */
+    @media (max-width:500px){.testimonial h2{font-size: 35px;}}
+
+    @media(max-width:1080px){.wrapper{display: flex;
+    flex-direction: column;
+}}
+
+    @media(max-width:1064px){.testimonial-item img {width: 300px;
+        border-radius: 50%;
+        
+    position: relative;
+left:240px;
+top:30px;}
+
+.testimonial-item{padding-top:30px;
+margin-top: 50px;}
+}
+@media(max-width:990px){}
+@media(max-width:700px){.testimonial-item img {width: 150px;
+    border-radius: 50%;
+    
+position: relative;
+left:100px;
+top:30px;
+margin-bottom: -20px;}}
+
+@media(max-width:500px){.testimonial-item h2{position: relative;
+left:65px;
+font-size: 30px;}
+.rating {position: relative;
+left:110px;}}
+
+/* ----contact section responsiveness---- */
+@media(max-width:620px){.contact h2 {font-size: 35px;
+margin-bottom: -10px;}
+.contact form .input-box input {width: 100%;
+    padding:9px;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-bottom: -5px;
+}
+.btn.btn-2{padding:10px 30px;
+    background-color: springgreen;
+     border-radius: 32px;
+    
+    font-size:16px;
+    color:white;
+   
+    
+}
+}
+
+@media(width:950px){.btn.btn-2.btn-3{margin-bottom:0 !important;}}
