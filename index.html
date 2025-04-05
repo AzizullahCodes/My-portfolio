@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio-Website</title>
+    <!-- -----bootstrap cdn---- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
      <!------------section header-------------  -->
      <section class="header">
-        <nav>
-            <a href="index.html"><img class="logo" src="./assets/eduford_img/logo.png" alt="logo"></a>
-            <div class="nav-links" id="navLinks">
-            <img class="icon" src="./assets/eduford_img/closing icon.jpg" onclick="hideMenu()" alt="icon">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-
-
+     
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white fs-1" href="#">Azizullah</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll gap-5" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fs-3" aria-current="page" href="#">Home</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-white fs-3" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fs-3" aria-current="page" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fs-3" aria-current="page" href="#">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white fs-3" aria-current="page" href="#">Contact</a>
+                  </li>
                 </ul>
-            </div> 
+                 
+              </div>
+            </div>
+          </nav>
      </section>
      <!-- -----home section code--------- -->
-      <section class="home" id="home">
+       <section class="home" id="home">
       
 <div class="home-img">
     <img src="./assets/WhatsApp Image 2025-03-30 at 11.14.43_b04d4d7f.jpg" alt="img">
@@ -50,8 +69,8 @@
 </div>
         
       </section>
-      <!-- --------about section---------- -->
-       <section class="about" id="about">
+      <!---------about section---------- -->
+        <section class="about" id="about">
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>I'm a <span>Frontend Developer</span></h3>
@@ -67,13 +86,13 @@
         </about>
        </section>
 
-       <!-- -----------service-section-code---- -->
+      <!-- ----service section code---- -->
         <section class="services" id="services">
             <h2 class="heading">My <span>Services</span></h2>
             
             <div class="services-container">
                 <div class="services-box">
-                    <i class="bx bx-code"></i>
+                    <i class='bx bx-code' id="my-icon"></i>
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Quasi eos pariatur tenetur ullam sunt reiciendis 
@@ -82,7 +101,7 @@
                     <a href="" class="btn btn-2">Read More</a>
                 </div>
                 <div class="services-box">
-                    <i class='bx bxs-palette'></i>
+                    <i class='bx bxs-palette' id="my-icon"></i>
                     <h3>UI/UX Designer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Quasi eos pariatur tenetur ullam sunt reiciendis 
@@ -91,7 +110,7 @@
                     <a href="" class="btn btn-2">Read More</a>
                 </div>
                 <div class="services-box">
-                    <i class='bx bxl-android'></i>
+                    <i class='bx bxl-android' id="my-icon"></i>
                     <h3>App Development</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                          Quasi eos pariatur tenetur ullam sunt reiciendis 
@@ -189,8 +208,9 @@
     <p class="copyright">
         &copy;Azizullah - All rights reserved
     </p>
- </div>
+ </div> 
+    
 <script src="app.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
