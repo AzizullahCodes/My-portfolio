@@ -174,6 +174,11 @@ padding-right: 20px;
 padding-left: 20px;
 padding-bottom: 30px;}
 
+ 
+@media(max-width:453px){.btn.btn-2.btn-4{position: relative;
+left:7px;
+top:-40px;}}
+
 
 @media(max-width:1150px){.services-container{
 flex-wrap: wrap;}}
@@ -196,10 +201,10 @@ flex-wrap: wrap;}}
         
     position: relative;
 left:140px;
-top:60px;}
+top:50px;}
 
 
-.testimonial-item h2 {font-size: 30px;
+.testimonial-item h2 {
 position: relative;
 left:100px;
 top:50px;
@@ -381,7 +386,7 @@ padding-bottom: 10px;}
         flex-direction: column;}}
 
         @media(max-width:540px){.about-content h2{
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 700;
 
         }
@@ -393,7 +398,7 @@ padding-bottom: 10px;}
         border-radius: 10px;
         padding:20px;
     
-font-size: 22px;}
+font-size: 14px;}
     }
 
     @media(max-width:540px){.about-img img {width: 200px;
@@ -402,30 +407,49 @@ font-size: 22px;}
     }}
 
     /*----------services section responsiveness---------- */
-@media(max-width:520px){.services h2{font-size: 40px;
+@media(max-width:520px){.services h2{font-size: 30px;
 margin-bottom:20px;
 font-weight: 700;}
 #my-icon{font-size: 60px;
-color:seagreen}}
+color:seagreen}
+.services-box h3 {padding-right: 10px;
+padding-left: 10px;}}
 
+@media(max-width:1016px) and (min-width:450px){.btn.btn-2.btn-4.btn-5{position: relative;
+margin-bottom: 20px;}}
     /* ----Testimonial section responsive code------- */
-    @media (max-width:500px){.testimonial h2{font-size: 35px;}}
-
+    @media (max-width:500px){.testimonial h2{font-size: 45px;
+    font-weight:700;}}
+ 
     @media(max-width:1080px){.wrapper{display: flex;
     flex-direction: column;
 }}
 
-    @media(max-width:1064px){.testimonial-item img {width: 300px;
+    @media(max-width:1085px){.testimonial-item .testimonial-img {width: 250px;
         border-radius: 50%;
         
     position: relative;
-left:240px;
+left:20px;
 top:30px;}
 
 .testimonial-item{padding-top:30px;
 margin-top: 50px;}
 }
-@media(max-width:990px){}
+@media(max-width:550px){.testimonial-item .testimonial-img{width:100px;
+border-radius: 50%;
+position: relative;
+left:90px;}
+.testimonial h2 {position: relative;
+margin-bottom: -25px;
+font-size: 30px;}
+.testimonial p {position: relative;
+top:90px;
+padding-left:30px;
+padding-right: 30px;
+padding-bottom: 120px;}
+.wrapper{display: flex;
+    flex-direction: column;
+gap:2px;}}
 @media(max-width:700px){.testimonial-item img {width: 150px;
     border-radius: 50%;
     
@@ -435,14 +459,21 @@ top:30px;
 margin-bottom: -20px;}}
 
 @media(max-width:500px){.testimonial-item h2{position: relative;
-left:65px;
+left:55px;
 font-size: 30px;}
-.rating {position: relative;
-left:110px;}}
+}
+@media(max-width:556px){.rating {position: relative;
+    left:90px;
+    top:80px;}}
+
 
 /* ----contact section responsiveness---- */
-@media(max-width:620px){.contact h2 {font-size: 35px;
-margin-bottom: -10px;}
+@media(max-width:620px){.contact h2 {font-size: 30px;
+margin-bottom: -10px;
+font-weight:700;
+position: relative;
+bottom:-10px;
+color: black;}
 .contact form .input-box input {width: 100%;
     padding:9px;
     font-size: 12px;
@@ -460,5 +491,9 @@ margin-bottom: -10px;}
 }
 }
 
-@media(width:950px){.btn.btn-2.btn-3{margin-bottom:0 !important;}}
+@media(max-width:417px){.btn.btn-2.btn-3 {position: relative;
+left:2px;
+top:-25px;
+padding:10px 10px;}}
 
+/* ---------footer responsiveness code--------- */
