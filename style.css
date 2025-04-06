@@ -398,6 +398,9 @@ margin-bottom: -120px;}}
         @media (max-width:960px){.about {
         flex-direction: column;}}
 
+        @media(max-width:768px){.about-img img{width: 200px;
+            border-radius: 50%;}}
+
     /*----------services section responsiveness---------- */
 @media(max-width:520px){.services h2{font-size: 30px;
 margin-bottom:20px;
