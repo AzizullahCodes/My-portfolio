@@ -491,6 +491,8 @@ left:2px;
 top:-25px;
 padding:10px 10px;}}
 
+@media(max-width:636px){.text-area{padding-top: 5px;}}
+
 /* ---------footer responsiveness code--------- */
 
 @media(max-width:500px){.footer .copyright {font-size: 20px;
