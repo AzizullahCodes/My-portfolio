@@ -15,20 +15,20 @@ align-items: center;
 transition: all 0.5s ease;
 
 } */
- .res {width:100%;
+ /* .res {width:100%;
     padding-left: 40px;
 border-radius: 10px;
 position:fixed;
 top:0;
 
-}
+} */
 
 /* ---------home section code--------- */
 .home {display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    background-color:aliceblue;
+    background-color:azure;
     padding-top:60px;
     padding-bottom: 30px;
     padding-right: 40px;
@@ -82,24 +82,28 @@ margin-top:60px;
 margin-right: 40px;
 transition: 0.3s ease;
 text-decoration: none;
-border:2px solid seagreen;}
+border:2px solid #007f73;
+color:#007f73}
 
-.social-media a:hover {transform: scale(1.5) translateY(-10px);
-box-shadow: 0 0 25px seagreen;
-background-color:springgreen;}
+.social-media a:hover {transform: scale(1.5) translateY(-5px);
+box-shadow: 0 0 25px #007f73;
+background-color:#007f73;
+color:#ffffff;}
 
-.btn {padding:16px 40px;
-background-color: springgreen;
+.btn {padding:8.8px 24.64px;
+background-color:#007f73;
  border-radius: 64px;
 box-shadow: none;
-font-size: 24px;
+font-size: 14px;
 font-weight: 600;
 text-decoration: none;
 color:white;
 transition:0.3s ease;
 }
 
-.btn:hover {box-shadow: 0 0 24px seagreen;}
+.btn:hover {box-shadow: 0 0 24px #007f73;
+background-color: #007f73;
+color:white;}
 
 /* ----------about-section----- */
 
@@ -107,7 +111,8 @@ transition:0.3s ease;
 align-items: center;
 justify-content: center;
 gap:100px;
-background-color: aliceblue;
+background-color:#d5fdf9;
+
 margin-top: 40px;
 padding-top:40px;
 padding-bottom: 40px;
@@ -129,25 +134,18 @@ padding-right: 40px;
 .heading {font-size: 66px;
 text-align: center;}
 
-.about-content {padding:0 64px;}
+
 
 .about-content h2 {text-align: left;
 line-height: 1.2;}
 
 .about-content h3 {font-size: 48px;}
 
-.about-content p {font-size: 20px;
-margin-top:32px;
-margin-bottom: 50px;
-border:2px solid black;
-background-color:;
-padding:10px;
-border-radius: 10px;
-}
+
 
 /* ------services section------- */
 .services {background-color: aliceblue;
-    background-color: aliceblue;
+    background-color: azure;
     margin-top: 40px;
     padding-top:40px;
     padding-bottom: 40px;
@@ -161,12 +159,12 @@ align-items: center;
 gap:32px;
 }
 
-.services-container .services-box {border:2px solid black;
+.services-container .services-box {
 
 border-radius: 32px;
 text-align: center;
 transition: 0.3s ease;
-background-color: aquamarine;
+background-color:#d5fdf9;
 padding-bottom: 30px;
 }
 
@@ -195,8 +193,7 @@ flex-wrap: wrap;}}
 
 
 /* ---------testimonial-section-------------- */
-.testimonial {background-color: aliceblue;
-    background-color: aliceblue;
+.testimonial {background-color:#d5fdf9;
     margin-top: 40px;
     padding-top:40px;
     padding-bottom: 40px;
@@ -211,14 +208,16 @@ flex-wrap: wrap;}}
         
     position: relative;
 left:140px;
-top:50px;}
+top:50px;
+}
 
 
 .testimonial-item h2 {
 position: relative;
 left:100px;
 top:50px;
-color:blue;}
+color:black;
+font-weight: 600;}
 
         .wrapper {display: flex;
         align-items: center;
@@ -227,8 +226,8 @@ color:blue;}
         transition: 0.4s ease;
     }
 
-    .testimonial-item {border:2px solid black;
-    background-color: aquamarine;
+    .testimonial-item {
+    background-color: #ffffff;
 border-radius: 40px;
 transition:  0.2s ease;
 }
@@ -236,13 +235,14 @@ transition:  0.2s ease;
     .rating {position: relative;
     top:50px;
 left:140px;
-color:green;}
+color:darkgreen}
 
 .testimonial-item p {position: relative;
 top:60px;
 padding-bottom:80px;
 padding-right: 40px;
 padding-left: 40px;
+font-size: 16px;
 }
 
 /* .testimonial:hover {border-color:springgreen ;
@@ -250,13 +250,13 @@ padding-left: 40px;
 transform: scale(1.02);
 } */
 
-.testimonial-item:hover {box-shadow: 0 0 25px springgreen;
-border:5px solid springgreen;
-transform: scale(1.02);}
+.testimonial-item:hover {box-shadow: 0 0 25px #007f73;
+border:2px solid #007f73;
+transform: scale(1);}
 
 
 /* -------contact section code---------- */
-.contact {background-color: aliceblue;
+.contact {background-color:azure;
     margin-top: 40px;
     padding-top:40px;
     padding-bottom: 20px;
@@ -264,7 +264,9 @@ transform: scale(1.02);}
     padding-right: 40px;}
 
 .contact h2 {margin-bottom: 48px;
-    color:seagreen;
+    color:#007f73;
+    font-size: 52px;
+    font-weight: 600;
 }
 
 .contact form {
@@ -280,12 +282,13 @@ flex-wrap: wrap;}
 
 .contact form .input-box input,
 .contact form textarea {width: 100%;
-padding:16px;
+padding:8px;
 font-size: 26px;
 border-radius: 12px;
-border:3px solid seagreen;
-margin: 10px 0;
+border:2px solid #007f73;
+margin: 6px 3px;
 resize: none;
+background-color: #ffffff;
 color:black;}
 
 .contact form .input-box input {width: 49%;
@@ -299,7 +302,7 @@ margin:12px 6px;}
 bottom: 0;
 width: 100%;
 padding:40px 0;
-background-color: aliceblue;
+background-color:#d5fdf9;
 margin-top: 30px;
 margin-bottom: 30px;}
 
@@ -308,7 +311,7 @@ padding-bottom: 25px;
 }
 
 .footer .social a {font-size: 25px;
-   border:3px solid seagreen;
+   border:2px solid #007f73;
    width: 42px;
    height: 42px;
    border-radius: 50%;
@@ -316,11 +319,13 @@ padding-bottom: 25px;
    text-align: center;
    line-height: 42px;
    margin: 0 10px;
-   transition: 0.3s ease;}
+   transition: 0.3s ease;
+color:#007f73;}
 
    .footer .social a:hover {transform: scale(1.5) translateY(-10px);
-    box-shadow: 0 0 25px seagreen;
-    background-color:springgreen;}
+    box-shadow: 0 0 25px #007f73;
+    background-color:#007f73;
+color:#ffffff}
 
     .footer .copyright {
     text-align: center;
@@ -339,16 +344,9 @@ font-weight: 700;}
 top:-150px;}
 
 
-    .home .social-media a:hover {background-color: springgreen;}
+    .home .social-media a:hover {background-color:#007f73;}
 
-    .home-content p {font-size: 20px;
-    background-color:aquamarine;
-    border: 2px solid black;
-    border-radius: 10px;
-
-
-padding:20px;
-}
+    
 
 .home .social-media {padding-left:20px;
 padding-top: 12px;
@@ -397,30 +395,8 @@ margin-bottom: -120px;}}
         
         }}
 /* ------about section responsiveness code */
-        @media(max-width:940px){.about {display: flex;
+        @media (max-width:960px){.about {
         flex-direction: column;}}
-
-        @media(max-width:540px){.about-content h2{
-            font-size: 35px;
-            font-weight: 700;
-
-        }
-        .about-content h3 {font-size: 35px;
-        font-weight: 700;}
-         
-        .about-content p {border:2px solid black;
-            background-color:aquamarine;
-        border-radius: 10px;
-        padding:20px;
-    
-font-size: 20px;
-}
-    }
-
-    @media(max-width:540px){.about-img img {width: 200px;
-        border-radius: 50%;
-        
-    }}
 
     /*----------services section responsiveness---------- */
 @media(max-width:520px){.services h2{font-size: 30px;
@@ -496,11 +472,11 @@ color: black;}
     border-radius: 8px;
     margin-bottom: -5px;
 }
-.btn.btn-2{padding:10px 30px;
-    background-color: springgreen;
+.btn.btn-2{padding:8.8px 24.64px;
+    background-color:#007f73;
      border-radius: 32px;
     
-    font-size:16px;
+    font-size:14px;
     color:white;
    
     
